@@ -43,12 +43,12 @@ html {
 header {
   background-image: url("../back.jpg");
   background-size: cover;
-  height: 120vh;
+  height: 140vh;
 }
 
 header .container_content {
   background-color: rgba(0, 0, 0, 0.4);
-  height: 120vh;
+  height: 140vh;
 }
 
 header nav {
@@ -177,17 +177,17 @@ header .home .item img {
 }
 
 header .home .item .item_box:hover {
-  background: #ECF0F1;
+  background: #d0d5db;
   transform: translateY(-10px);
   color: black;
 }
 
 header .home .item .item_box:hover a {
-  color: black;
+  color: #12B0BB;
 }
 
 header .home .item .item_box:hover img {
-  background-color: #12B0BB;
+  background-color: transparent;
 }
 
 @media only screen and (max-width: 800px) {
@@ -274,7 +274,7 @@ header .home .item .item_box:hover img {
   position: relative;
 }
 
-.Design .box i::after {
+/*.Design .box i::after {
   content: " ";
   position: absolute;
   width: 80px;
@@ -283,7 +283,7 @@ header .home .item .item_box:hover img {
   border-radius: 50%;
   left: -30%;
   top: -10%;
-}
+}*/
 
 .Design .box h4 {
   font-size: 25px;
@@ -301,8 +301,8 @@ header .home .item .item_box:hover img {
 /*---------------about--------*/
 .left,
 .right {
-  width: 50%;
-  padding: 40px;
+  width: 100%;
+  padding: 20px;
 }
 
 h2 {
@@ -315,11 +315,11 @@ h2 {
 }
 
 .about img {
-  width: 100%;
-  height: 100%;
+  width:  90vh;
+  height: 100vh;
 }
 
-.about .img::after {
+/*.about .img::after {
   content: '';
   position: absolute;
   width: 600px;
@@ -327,7 +327,7 @@ h2 {
   border: 10px solid skyblue;
   left: 13.5%;
   margin-top: 30px;
-}
+}*/
 
 h5 {
   letter-spacing: 2px;
@@ -364,7 +364,7 @@ h5 {
 
 .about p {
   font-size: 20px;
-  color: grey;
+  color: black;
   line-height: 35px;
   padding: 30px;
 }
