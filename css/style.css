@@ -198,7 +198,7 @@ header .home .item .item_box:hover img {
   }
 
   .container {
-    max-width: 95%;
+    max-width: 65%;
   }
 
   header ul {
@@ -535,7 +535,7 @@ footer .box {
 }
 
 footer .img {
-  width: 100px;
+  width: 140px;
   height: 100px;
 }
 
@@ -552,7 +552,7 @@ footer .text {
 
 footer p {
   font-size: 22px;
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
 footer input {
