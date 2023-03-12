@@ -53,7 +53,7 @@ header .container_content {
 }
 
 header nav {
-  display: flex;
+  display: block;
   justify-content: space-between;
 }
 
