@@ -43,13 +43,13 @@ html {
 header {
   background-image: url("../back.jpg");
   background-size: cover;
-  height: 140vh;
+  height: 150vh;
 }
 
 header .container_content {
   background-color: rgba(0, 0, 0, 0.4);
   background-size: cover;
-  height: 140vh;
+  height: 150vh;
 }
 
 header nav {
@@ -246,7 +246,7 @@ header .home .item .item_box:hover img {
   
   header .container_content {
     
-    height: 120vh !important;
+    height: 140vh !important;
   }
 
   header .home h3 {
@@ -681,7 +681,7 @@ footer .content li {
   /*----global ----*/
   header {
     background-image: url("../back.jpg");
-    height: 120vh !important;
+    height: 140vh !important;
   }
 
   header .icon i {

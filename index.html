@@ -79,19 +79,56 @@
 
 
   <script>
+    // 當網頁載入完畢後執行
+    window.onload = function() {
+      // 從瀏覽器的 cookie 中讀取名為 "showTips" 的變數
+      let showTips = getCookie("showTips");
+  
+      // 如果 showTips 變數不存在，則跳出提示頁
+      if (!showTips) {
+        let tips = document.getElementById("tips");
+        tips.style.display = "block";
+  
+        // 將變數 showTips 設定為 true，並儲存到瀏覽器的 cookie 中
+        setCookie("showTips", true, 7);
+      }
+    }
+  
+    // 取得指定名稱的 cookie 值
+    function getCookie(name) {
+      let value = "; " + document.cookie;
+      let parts = value.split("; " + name + "=");
+      if (parts.length == 2) {
+        return parts.pop().split(";").shift();
+      }
+    }
+  
+    // 設定 cookie 值，並指定有效天數
+    function setCookie(name, value, days) {
+      let expires = "";
+      if (days) {
+        let date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toUTCString();
+      }
+      document.cookie = name + "=" + (value || "") + expires + "; path=/";
+    }
+  
     let bar = document.getElementById("icon");
     let menu = document.getElementById("menu");
-
+  
     bar.addEventListener("click", function() {
       if (bar.className === "fa fa-bars") {
         bar.className = "fa fa-times";
         menu.style.right = 0;
       } else {
         bar.className = "fa fa-bars";
-        menu.style.right = "-800px";
+        menu.style.right = "-1000px";
       }
     })
   </script>
+  
+  
 
 
   <section class="Design">
